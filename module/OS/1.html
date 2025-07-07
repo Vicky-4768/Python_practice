@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="w3-col l10 m12" id="main">
+    
+    <h1 class="with-bookmark">
+        <div id="bookmark-btn" class="bookmark-btn" title="Click to add bookmark">
+            <div class="-svg-icon -on"
+                style="mask: url(&quot;/lib/my-learning/icon/main/bookmark-on.svg&quot;) center center / auto 100% no-repeat;">
+            </div>
+            <div class="-svg-icon -off -active"
+                style="mask: url(&quot;/lib/my-learning/icon/main/bookmark-off.svg&quot;) center center / auto 100% no-repeat;">
+            </div>
+        </div>Python <span class="color_h1">os.listdir()</span> Method
+    </h1>
+    <p><a class="w3-btn w3-white w3-border" href="module_os.asp">❮ OS Module</a></p>
+    <hr>
+
+    <div class="w3-example">
+        <h3>Example<a class="ws-black ws-hover-black spaces-tryit ga-featured" href="/python/python_server.asp"
+                title="W3Schools Spaces" target="_blank">Get your own Python Server</a></h3>
+        <p>Print a list of all entries in the current directory:</p>
+        <div class="w3-code notranslate pythonHigh"><span class="pythoncolor" style="color:black"><span
+                    class="pythonnumbercolor" style="color:#905">
+                </span> <span class="commentcolor" style="color:slategray">#Import os Library<br></span><span
+                    class="pythonnumbercolor" style="color:#905">
+                </span> <span class="pythonkeywordcolor" style="color:#005cc5">import</span> os <br><span
+                    class="pythonnumbercolor" style="color:#905">
+                </span> <br><span class="commentcolor" style="color:slategray">#print all entries in current directory
+                    <br></span><span class="pythonkeywordcolor" style="color:#005cc5">print</span> (os.listdir())<span
+                    class="pythonnumbercolor" style="color:#905">
+                </span> </span></div>
+        <a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_ref_os_listdir">Try it
+            Yourself »</a>
+    </div>
+    <hr>
+
+    <h2>Definition and Usage</h2>
+    <p>The <code class="w3-codespan">os.listdir()</code> method returns a list of the names of the entries in
+        a directory. </p>
+    <p> The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in
+        the directory.</p>
+    <p><strong>Note:</strong> Available on UNIX and WINDOWS platforms.</p>
+    <hr>
+
+    <h2>Syntax</h2>
+    <div class="w3-code w3-border notranslate">
+        <div>os.listdir(<em>path</em>)</div>
+    </div>
+
+    <h2>Parameter Values</h2>
+    <table class="ws-table-all notranslate">
+        <tbody>
+            <tr>
+                <th style="width:23%">Parameter</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><em>path</em></td>
+                <td>Optional. Specifies the directory to explore. If omitted, then list of
+                    files and directories in the current working directory is considered</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Technical Details</h2>
+    <table class="ws-table-all">
+        <tbody>
+            <tr>
+                <th style="width:23%">Return Value:</th>
+                <td>A <code class="w3-codespan">list</code> value, representing the names of the entries in the
+                    directory
+                </td>
+            </tr>
+            <tr>
+                <th>Python Version:</th>
+                <td>pre 2.6</td>
+            </tr>
+            <tr>
+                <th>Change Log:</th>
+                <td> 3.2 - The path parameter became optional <br>
+                    3.3 - Added support for specifying path as an open file descriptor<br>
+                    3.6 - Accepts a path-like object</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <p><a class="w3-btn w3-white w3-border" href="module_os.asp">❮ OS Module</a></p>
+    <div id="user-profile-bottom-wrapper" class="user-profile-bottom-wrapper">
+        <div class="user-authenticated w3-hide">
+            <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fpython%2Fref_os_listdir.asp"
+                class="user-profile-btn user-profile-bottom-btn ga-bottom ga-bottom-profile"
+                title="Your W3Schools Profile" aria-label="Your W3Schools Profile" target="_top">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2048 2048" class="user-profile-icon"
+                    aria-label="Your W3Schools Profile Icon">
+                    <path
+                        d="M 843.500 1148.155 C 837.450 1148.515, 823.050 1149.334, 811.500 1149.975 C 742.799 1153.788, 704.251 1162.996, 635.391 1192.044 C 517.544 1241.756, 398.992 1352.262, 337.200 1470 C 251.831 1632.658, 253.457 1816.879, 340.500 1843.982 C 351.574 1847.431, 1696.426 1847.431, 1707.500 1843.982 C 1794.543 1816.879, 1796.169 1632.658, 1710.800 1470 C 1649.008 1352.262, 1530.456 1241.756, 1412.609 1192.044 C 1344.588 1163.350, 1305.224 1153.854, 1238.500 1150.039 C 1190.330 1147.286, 1196.307 1147.328, 1097 1149.035 C 1039.984 1150.015, 1010.205 1150.008, 950 1149.003 C 851.731 1147.362, 856.213 1147.398, 843.500 1148.155"
+                        stroke="none" fill="#2a93fb" fill-rule="evenodd"></path>
+                    <path
+                        d="M 1008 194.584 C 1006.075 194.809, 999.325 195.476, 993 196.064 C 927.768 202.134, 845.423 233.043, 786 273.762 C 691.987 338.184, 622.881 442.165, 601.082 552 C 588.496 615.414, 592.917 705.245, 611.329 760.230 C 643.220 855.469, 694.977 930.136, 763.195 979.321 C 810.333 1013.308, 839.747 1026.645, 913.697 1047.562 C 1010.275 1074.879, 1108.934 1065.290, 1221 1017.694 C 1259.787 1001.221, 1307.818 965.858, 1339.852 930.191 C 1460.375 795.998, 1488.781 609.032, 1412.581 451.500 C 1350.098 322.327, 1240.457 235.724, 1097.500 202.624 C 1072.356 196.802, 1025.206 192.566, 1008 194.584"
+                        stroke="none" fill="#0aaa8a" fill-rule="evenodd"></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="user-progress"
+                    aria-label="Your W3Schools Profile Progress">
+                    <path class="user-progress-circle1" fill="none"
+                        d="M 25.99650934151373 15.00000030461742 A 20 20 0 1 0 26 15"></path>
+                    <path class="user-progress-circle2" fill="none" d="M 26 15 A 20 20 0 0 0 26 15"></path>
+                </svg>
+
+                <span class="user-progress-star">★</span>
+
+                <span class="user-progress-point">+1</span>
+            </a>
+        </div>
+
+        <div class="w3s-pathfinder -teaser user-anonymous">
+            <div class="-background-image -variant-t2">&nbsp;</div>
+
+            <div class="-inner-wrapper">
+                <div class="-main-section">
+                    <div class="-inner-wrapper">
+                        <div class="-headline">Track your progress - it's free!</div>
+                        <div class="-body">
+                            <div class="-progress-bar">
+                                <div class="-slider" style="width: 20%;">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="-right-side-section">
+                    <div class="-user-session-btns">
+                        <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com&amp;origin=https%3A%2F%2Fwww.w3schools.com%2Fpython%2Fref_os_listdir.asp"
+                            class="-login-btn w3-btn bar-item-hover w3-right ws-light-green ga-bottom ga-bottom-login"
+                            title="Login to your account" aria-label="Login to your account" target="_top">
+                            Log in
+                        </a>
+
+                        <a href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com&amp;origin=https%3A%2F%2Fwww.w3schools.com%2Fpython%2Fref_os_listdir.asp"
+                            class="-signup-btn w3-button w3-right ws-green ws-hover-green ga-bottom ga-bottom-signup"
+                            title="Sign Up to Improve Your Learning Experience"
+                            aria-label="Sign Up to Improve Your Learning Experience" target="_top">
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
