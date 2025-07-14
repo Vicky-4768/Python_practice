@@ -1,3 +1,10 @@
+from Func_lib import open_file
+
+# Run this script to open the HTML file in the default web browser
+open_file("C:\\Users\\Rampage\\Desktop\\Python_prac\\method\\html\\strip().html")
+
+
+
 # The strip() method remove leading and traling whitespace.
     # Ex.
 fruit = "   banana   "

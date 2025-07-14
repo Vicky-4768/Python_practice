@@ -1,0 +1,88 @@
+# Here’s a simple function named greet_user() that prints a greeting:
+def greet_user():
+    print("Hello, user!")
+# You can call this function to see the greeting:
+greet_user()
+# This function greet_user() does not take any parameters and simply prints a message.
+# Functions can also take parameters to perform operations with them.
+# Here’s an example of a function that takes a name as a parameter and prints a greeting:
+def greet(name):
+    print(f"Hello, {name}!")
+# You can call this function with a specific name:
+greet("Alice")
+# This function greet() takes one parameter, name, and prints a personalized greeting.
+# Functions can also return values. Here’s an example of a function that returns a greeting message:
+def get_greeting(name):
+    return f"Hello, {name}!"    
+# You can call this function and store the returned value in a variable:
+greeting_message = get_greeting("Bob")
+# Then you can print the greeting message:
+print(greeting_message)
+# This function get_greeting() takes a name as a parameter and returns a greeting message.
+# Functions can also take multiple parameters. Here’s an example of a function that takes two numbers and returns their sum:
+def add_numbers(a, b):
+    return a + b
+# You can call this function with two numbers and store the result:
+result = add_numbers(5, 3)
+# Then you can print the result:
+print(result)
+# This function add_numbers() takes two parameters, a and b, and returns their sum.
+# Functions can also have default parameter values. Here’s an example of a function that takes a name and an optional greeting:
+def greet_with_default(name, greeting="Hello"):
+    return f"{greeting}, {name}!"  
+# You can call this function with just a name, and it will use the default greeting:
+greeting_message = greet_with_default("Charlie")
+# Or you can specify a different greeting:
+greeting_message = greet_with_default("Charlie", "Hi")
+# Then you can print the greeting message:
+print(greeting_message)
+# This function greet_with_default() takes a name and an optional greeting, using "Hello" as the default if no greeting is provided.
+# Functions can also take variable-length arguments using *args and **kwargs. Here’s an example of a function that takes any number of names and prints a greeting for each:
+def greet_multiple(*names):
+    for name in names:
+        print(f"Hello, {name}!")
+# You can call this function with multiple names:
+greet_multiple("Alice", "Bob", "Charlie")
+# This function greet_multiple() takes any number of names and prints a greeting for each one.
+
+# Functions can also take keyword arguments using **kwargs. Here’s an example of a function that
+# takes any number of keyword arguments and prints them:
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+# You can call this function with any number of keyword arguments:
+print_info(name="Alice", age=30, city="New York")
+# This function print_info() takes any number of keyword arguments and prints each key-value pair.
+
+# Functions can also be nested, meaning you can define a function inside another function. Here’s
+# an example of a function that defines another function inside it:
+def outer_function():
+    def inner_function():
+        print("This is the inner function.")
+    inner_function()  # Call the inner function
+# You can call the outer function to see the inner function in action:
+outer_function()    
+# This function outer_function() defines an inner function inner_function() and calls it.
+
+# Functions can also be assigned to variables, allowing you to treat them like any other object. Here’s an example:
+def say_hello():
+    return "Hello!"
+
+greeting = say_hello()
+print(greeting)
+# In this example, the function say_hello() is assigned to the variable greeting, and you can call it like a regular function.
+# Functions can also be passed as arguments to other functions. Here’s an example:
+def call_function(func):
+    return func()
+
+result = call_function(say_hello)
+print(result)
+# In this example, the function call_function() takes another function as an argument and calls it.
+# This allows you to pass functions around and use them as first-class citizens in Python.
+# Functions can also be used as return values from other functions. Here’s an example:
+def create_greeting_function(name):
+    def greeting_function():
+        return f"Hello, {name}!"
+    return greeting_function
+# You can create a greeting function for a specific name:
+greet_alice = create_greeting_function("Alice")
